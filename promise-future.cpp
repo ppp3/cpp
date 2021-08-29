@@ -1,7 +1,6 @@
 #include <iostream>
 #include <future>
 #include <thread>
-//Interessant für Funktionen mit Rückgabe
 using namespace std;
 
 void product(promise<int>&& prom, int a, int b)
