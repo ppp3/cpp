@@ -1,5 +1,3 @@
-//Wrapper für nullbare Variable
-//Value Semantic
 #include <iostream>
 #include <string>
 #include <optional>
@@ -10,7 +8,7 @@ int main()
   os ="Stefan";
   if (os)
   {
-    std:::string s=*os;
+    std::string s=*os;
   }
   
   if (os.has_value())
@@ -22,8 +20,6 @@ int main()
   
   auto os2=os; //Echte Kopie wird angelegt
   os="Björn";
-  std::cout <<"Ergebnis "<<*os<<endl; //Stefan
-  
-  
-  
+  std::cout <<"Ergebnis "<<*os2<<std::endl; //Stefan
+    
 }
